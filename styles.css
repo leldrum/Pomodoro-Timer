@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.page {
+    background-color: #d01919;
+}
+
+body {
+    background-color: #d01919; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
