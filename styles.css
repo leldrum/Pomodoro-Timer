@@ -24,7 +24,7 @@ body {
 
 #icone {
     background-color: #d01919;
-    border-radius: 50%;
+    border-radius: 50%;  /*pour avoir la forme ronde*/
     border: none;
     color: white;
     height: 15vh;
@@ -37,7 +37,7 @@ body {
 
 
 .timer{
-    border-radius: 50%;
+    border-radius: 50%; /*pour avoir la forme ronde*/
     height: 60vh;
     width: 60vh;
     display: flex;
@@ -46,7 +46,7 @@ body {
     background-color: #c10000;
     border: 5px solid #ffd700;
     margin: 0 auto 7vh;
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);   /*ombre du cercle*/
     font-size: 15vh;
 }
 
@@ -58,10 +58,10 @@ body {
     background-color: #c10000;
     margin-bottom: 10vh;
     font-size: large;
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);   /*ombre du cercle*/
     height: 15vh;
-    width: 60vh;
-    
+    width: 60vh; 
+    border-radius: 5vh;
 }
 
 .pause{
@@ -100,9 +100,55 @@ body {
     padding: 1vh;
 }
 
-#timeModal{
+#formulModif{
     display: none;
+    border-radius: 50%;
+    flex-direction: column;
+    height: 60vh;
+    width: 60vh;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    margin: 0 auto 7vh;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
+    font-size: 3vh; 
+    position: relative;
 }
+
+h2{
+    margin-top: 8vh;
+    margin-left: 11vh;
+    margin-bottom: 4vh;
+}
+
+label{
+    margin-left: 9vh;
+    font-size: 3.5vh;
+}
+
+#minuteTravailInput, #secondeTravailInput, #minutePauseInput, #secondePauseInput, #heureTravailInput, #heurePauseInput{
+    margin-left: 3vh;
+    font-size: 2.5vh; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #fff; 
+    color: #333; 
+    width: 10vh; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Ombre pour un effet de profondeur */
+}
+
+#saveTime{
+    margin-top: 4vh; 
+    margin-left: 10vh; 
+    font-size: 3vh;
+}
+
+#cancelTime{
+    font-size: 3vh;
+    margin-left: 4vh; 
+}
+
+
 
 .reset{
     display: flex;
@@ -110,28 +156,32 @@ body {
     align-items: center;
 }
 
-#icone i, #setting i {
-    font-size: 14vh; /* Taille de l'icône relative à la hauteur de la fenêtre */
+#icone i, #setting i{
+    font-size: 14vh; /*taille de l'icône*/
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
     #icone, #setting {
-        height: 12vh; /* Ajustement pour tablettes */
+        height: 12vh; /*ajustement pour tablettes */
         width: 12vh;
     }
 
-    #icone i, #setting i {
+    #icone i, #setting i{
         font-size: 10vh;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px){
     #icone, #setting {
-        height: 10vh; /* Ajustement pour smartphones */
+        height: 10vh; /*ajustement pour smartphones */
         width: 10vh;
     }
 
-    #icone i, #setting i {
+    #icone i, #setting i{
         font-size: 8vh;
     }
 }
+
+
+
+
