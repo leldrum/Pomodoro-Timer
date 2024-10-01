@@ -18,7 +18,21 @@
             25:00
         </div>
         <div class="reset">
-            <button id="icone"><i class="fa-regular fa-circle-play fa-10x" style="color: #ffffff;"></i></button>
+            <button id="icone"><i class="fa-regular fa-circle-play " style="color: #ffffff;"></i></button>
+            <button id="setting"><i class="fa-solid fa-gear " style="color: #ffffff;"></i></button> 
+        </div>
+        <div id="timeModal">
+            <h2>Changer les heures</h2>
+            <label for="minuteTravailInput">Minutes de travail :</label>
+            <input type="number" id="minuteTravailInput" value="25" min="0" max="59"><br>
+            <label for="secondeTravailInput">Secondes de travail :</label>
+            <input type="number" id="secondeTravailInput" value="0" min="0" max="59"><br>
+            <label for="minutePauseInput">Minutes de pause :</label>
+            <input type="number" id="minutePauseInput" value="5" min="0" max="59"><br>
+            <label for="secondePauseInput">Secondes de pause :</label>
+            <input type="number" id="secondePauseInput" value="0" min="0" max="59"><br>
+            <button id="saveTime">Sauvegarder</button>
+            <button id="cancelTime">Annuler</button>
         </div>
     </div>
     <script src="script.js"></script>

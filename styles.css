@@ -1,10 +1,16 @@
 h1 {
     text-align: center;
     color: white;
+    font-size: 8vh;
 }
 
 .page {
     background-color: #d01919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 body {
@@ -21,25 +27,27 @@ body {
     border-radius: 50%;
     border: none;
     color: white;
-    height: 150px;
-    width: 150px;
+    height: 15vh;
+    width: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1vh;
 }
+
 
 .timer{
     border-radius: 50%;
-    height: 500px;
-    width: 500px;
+    height: 60vh;
+    width: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #c10000;
     border: 5px solid #ffd700;
-    margin: 0 auto 30px;
+    margin: 0 auto 7vh;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
-    font-size: 150px;
+    font-size: 15vh;
 }
 
 
@@ -48,10 +56,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #c10000;
-    margin-bottom: 75px;
+    margin-bottom: 10vh;
     font-size: large;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
-    height: 100px;
+    height: 15vh;
+    width: 60vh;
     
 }
 
@@ -59,8 +68,11 @@ body {
     background-color: #c10000;
     border: none;
     color: white;
-    font-size: 30px;
-    padding: 6px;
+    font-size: 6vh;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -68,6 +80,58 @@ body {
     background-color: #c10000;
     border: none;
     color: white;
-    font-size: 30px;
-    padding: 6px;
+    font-size: 6vh;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#setting {
+    background-color: #d01919;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+}
+
+#timeModal{
+    display: none;
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icone i, #setting i {
+    font-size: 14vh; /* Taille de l'icône relative à la hauteur de la fenêtre */
+}
+
+@media (max-width: 768px) {
+    #icone, #setting {
+        height: 12vh; /* Ajustement pour tablettes */
+        width: 12vh;
+    }
+
+    #icone i, #setting i {
+        font-size: 10vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #icone, #setting {
+        height: 10vh; /* Ajustement pour smartphones */
+        width: 10vh;
+    }
+
+    #icone i, #setting i {
+        font-size: 8vh;
+    }
 }
